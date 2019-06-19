@@ -30,8 +30,10 @@ shinyUI(fluidPage(
                    choices = list("City or Town"="2","Rural"="1")),
        selectInput(inputId = "Insured Before", label="Insured Before", 
                    choices = list("Yes"="2","No"="1")),
+       selectInput(inputId = "Social network ", label="Social network ", 
+                   choices = list("Twitter"="2","FaceBook"="1","WhatsApp"="3","All three"="4", "Others"="5", "None"="6")),
        selectInput(inputId="MaritalStatus", label="Marital Status", 
-                   choices = list("Null"="0","Married"="1","Engaged"="4","Divorced"="3","Single"="2")),
+                   choices = list("Others"="0","Married"="1","Engaged"="4","Divorced"="3","Single"="2")),
        numericInput(inputId="Term", label="Term", 
                     value=10,min=0, max=50)
       ),
